@@ -1,8 +1,8 @@
 import myName from "../utils/helloworld.mjs";
+import assert from "assert";
 
+it("My name", ()=> {
+    const name = myName();
 
-    it('should return the string "Bamidele"', () => {
-      const name=myName();
-      console.log(name);
-      expect(name).toBe('Bamidele');
-    });
+    assert.equal(name, "Bamidele");
+});
