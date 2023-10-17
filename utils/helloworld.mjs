@@ -1,7 +1,9 @@
+
+
 const myName = ()=>{
-    return "Bamidele"
+    return "Bamidele";
 };
 
 console.log("Hello, "+myName());
+module.exports = myName;
 
-export default myName;

@@ -1,8 +1,8 @@
-import myName from "../helloworld.mjs";
-import assert from "assert";
+import myName from "../utils/helloworld.mjs";
 
-it("My name", ()=> {
-    const name = myName();
 
-    assert.equal(name, "Bamidele");
-});
+    it('should return the string "Bamidele"', () => {
+      const name=myName();
+      console.log(name);
+      expect(name).toBe('Bamidele');
+    });
